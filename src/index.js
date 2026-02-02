@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { connectDB } from './config/mongodb.js';
 import authRouter from './routes/authRouter.js';
+import tasksRouter from './routes/tasksRouter.js';
 
 dotenv.config();
 
@@ -12,11 +13,11 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/auth', authRouter);
+app.use('/api/tasks', tasksRouter);
 
 app.get('/api/health', function (req, res) {
   res.json({ status: 'ok' });
 });
-
 
 const PORT = process.env.PORT || 5000;
 
