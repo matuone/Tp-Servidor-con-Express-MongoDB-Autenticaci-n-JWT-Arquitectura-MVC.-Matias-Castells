@@ -1,0 +1,20 @@
+meta {
+  name: Obtener tareas
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:5000/api/tasks
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTdmZmI1OWRkZjE4ZmVkNjRkNjAyYzYiLCJpYXQiOjE3Njk5OTUxMTUsImV4cCI6MTc2OTk5NjkxNX0.CNtkhSqgx7zUaF0le0sbz4rcwXD3jJJFcuTUKgDs1aM
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

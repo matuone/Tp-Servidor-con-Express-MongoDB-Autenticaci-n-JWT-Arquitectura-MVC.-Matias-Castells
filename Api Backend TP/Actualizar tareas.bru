@@ -1,0 +1,28 @@
+meta {
+  name: Actualizar tareas
+  type: http
+  seq: 6
+}
+
+patch {
+  url: http://localhost:5000/api/tasks/697ffd15ddf18fed64d602d0
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTdmZmI1OWRkZjE4ZmVkNjRkNjAyYzYiLCJpYXQiOjE3Njk5OTUxMTUsImV4cCI6MTc2OTk5NjkxNX0.CNtkhSqgx7zUaF0le0sbz4rcwXD3jJJFcuTUKgDs1aM
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "title": "Testeo para actualizar tarea"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Api Backend TP",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
